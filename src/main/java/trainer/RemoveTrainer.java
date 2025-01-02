@@ -18,9 +18,9 @@ public class RemoveTrainer extends SqlData {
 		
 		// Implementing Scanner class for taking input from the user.
 		Scanner sc = new Scanner(System.in);
+
 		
-		//Taking input as trainer name for removing
-		
+		//Taking input as trainer name for removing	
 		System.out.println("Enter name : ");
 		String name = sc.next();
 		
