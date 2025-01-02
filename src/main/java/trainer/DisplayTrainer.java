@@ -22,13 +22,14 @@ public class DisplayTrainer extends SqlData{
 	Scanner sc = new Scanner(System.in);
 	
 		while(true) {
-			System.out.println("\n1.Search trainer");
-	
+			//used \n for a new line
+			System.out.println("\n1.Search trainer");	
 			System.out.println("2.Display all trainer");
 			System.out.println("3.Exit Displaying");
 			int choice = sc.nextInt();
 			
 			if(choice == 1) {
+				//Instruction for Search
 				System.out.println("Enter name : ");
 				String username = sc.next();
 				
@@ -49,6 +50,7 @@ public class DisplayTrainer extends SqlData{
 					}
 				}
 			} else if(choice == 2) {
+				//Instruction for displaying all trainers
 				String query = "SELECT * FROM gym_management.trainer";
 				
 				ResultSet result = statement.executeQuery(query);
