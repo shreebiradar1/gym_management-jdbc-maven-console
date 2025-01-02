@@ -19,7 +19,9 @@ public class AddTrainer extends SqlData{
 	
 	// Implementing Scanner class for taking input from the user.
 	Scanner sc = new Scanner(System.in);
-	
+
+
+	//Adding trainer information
 	System.out.println("Enter trainer id : ");
 	int id = sc.nextInt();
 	
@@ -47,6 +49,7 @@ public class AddTrainer extends SqlData{
 				 + "VALUES ( "+ id +", '" + name + "', " + age + ", '" + email + "', '" + mobile + "', " + exp + ", '" + type + "');";
 	
 	//To run the SQL query we use execute method which is present inside the Statement class
+	
 	statement.execute(query);
 	
 	System.out.println("\nNew Trainer has been added\n");
