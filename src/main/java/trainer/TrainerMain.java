@@ -7,7 +7,7 @@ public class TrainerMain {
 	public static void trainermain() throws SQLException {
 		
 		Scanner sc = new Scanner(System.in);
-		
+		//Here is the trainer main class where we perform instruction on Trainer will be seen here
 		System.out.println("\nWhat would you like to do");
 		
 		//Creating a while loop for multiple instructions
@@ -24,6 +24,7 @@ public class TrainerMain {
 			if(choice == 1) {
 				//Written instruction inside that class
 				//Directly calling the static method
+				//Which is present inside the same package
 				AddTrainer.addtrainer();
 			}
 			else if(choice == 2) {
